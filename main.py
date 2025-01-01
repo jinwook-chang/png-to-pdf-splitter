@@ -11,6 +11,7 @@ from PyQt5.QtCore import Qt, QRectF, QVariant, QPointF
 from PyQt5.QtWidgets import QGraphicsItem
 from PIL import Image
 
+Image.MAX_IMAGE_PIXELS = 200000000
 
 class DraggableLineItem(QGraphicsItem):
     """
