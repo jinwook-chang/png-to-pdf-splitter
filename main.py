@@ -270,8 +270,8 @@ class MainWindow(QMainWindow):
         temp_file_list = []
         try:
             for idx, p_img in enumerate(padded_images):
-                temp_path = f"__temp_export_{idx}.jpg"
-                p_img.save(temp_path, "JPEG")
+                temp_path = f"__temp_export_{idx}.png"
+                p_img.save(temp_path, "PNG")
                 temp_file_list.append(temp_path)
 
             with open(outPdfPath, "wb") as f:
